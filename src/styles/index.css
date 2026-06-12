@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1c241f;
+  --color-forest: #24372c;
+  --color-forest-light: #3f5a49;
+  --color-clay: #d9793f;
+  --color-clay-light: #eda76f;
+  --color-cream: #f5f0e8;
+  --color-sand: #e5d8c7;
+  --color-mist: #ebe9e2;
+  --font-sans: "Aptos", "Segoe UI", Arial, sans-serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua",
+    Georgia, serif;
+  --shadow-soft: 0 20px 60px rgb(30 39 33 / 12%);
+  --shadow-card: 0 12px 36px rgb(30 39 33 / 10%);
+}
+
+:root {
+  color: #1c241f;
+  background: #f5f0e8;
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+  background: #f5f0e8;
+}
+
+body,
+button,
+a {
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  display: block;
+}
+
+::selection {
+  color: #fff;
+  background: #d9793f;
+}
+
+:focus-visible {
+  outline: 3px solid #eda76f;
+  outline-offset: 4px;
+}
+
+.container-shell {
+  width: min(100% - 2rem, 76rem);
+  margin-inline: auto;
+}
+
+.display-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+
+.section-space {
+  padding-block: clamp(5rem, 10vw, 8.5rem);
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.noise-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.16'/%3E%3C/svg%3E");
+}
+
+.whatsapp-halo {
+  animation: whatsapp-halo-pulse 2.8s ease-out infinite;
+}
+
+@keyframes whatsapp-halo-pulse {
+  0% {
+    opacity: 0.55;
+    transform: scale(0.9);
+  }
+
+  70%,
+  100% {
+    opacity: 0;
+    transform: scale(1.55);
+  }
+}
+
+.implantation-wrapper,
+.implantation-content {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.implantation-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .container-shell {
+    width: min(100% - 1.25rem, 76rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .whatsapp-halo {
+    opacity: 0.22;
+    transform: scale(1.18);
+  }
+}
