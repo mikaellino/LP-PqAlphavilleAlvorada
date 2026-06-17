@@ -19,16 +19,21 @@ export function CTASection() {
         <h2 className="display-title mx-auto mt-4 max-w-4xl text-balance text-4xl leading-[1.06] sm:text-5xl lg:text-6xl">
           Quer receber mais informações sobre o lançamento?
         </h2>
-        <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
-          Fale diretamente com o corretor e tire suas dúvidas sobre
-          disponibilidade, implantação, lotes e próximas etapas do Parque
-          Alphaville Alvorada.
+        <p className="mx-auto mt-6 max-w-3xl text-sm leading-7 text-white/70 sm:text-base sm:leading-8">
+          Fale diretamente com o corretor Adriano,{' '}
+          <span className="whitespace-nowrap">CRECI 180471‑F</span>, e tire
+          suas dúvidas sobre valores, prazo de entrega e data do lançamento.
+          Fechando negócio, ganhe uma{' '}
+          <span className="whitespace-nowrap">TV 43&quot;.</span>
         </p>
         <WhatsAppButton variant="light" className="mt-8">
           Conversar pelo WhatsApp
         </WhatsAppButton>
+        <p className="mx-auto mt-5 max-w-2xl text-xs leading-5 text-white/48 sm:text-sm sm:leading-6">
+          Obs.: a escolha do lote e o menor preço são destinados aos clientes
+          com cadastro completo para o evento de lançamento.
+        </p>
       </div>
     </section>
   );
 }
-

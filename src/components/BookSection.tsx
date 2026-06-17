@@ -2,11 +2,28 @@ import { Download, ExternalLink, FileText } from 'lucide-react';
 import { BOOK_PDF_URL } from '../config/site';
 import { Reveal } from './Reveal';
 import { SectionTitle } from './SectionTitle';
+import { WhatsAppButton } from './WhatsAppButton';
 
 export function BookSection() {
   return (
-    <section id="book" className="section-space overflow-hidden bg-sand">
+    <section
+      id="book"
+      className="overflow-hidden bg-sand pb-[clamp(5rem,10vw,8.5rem)] pt-10 sm:pt-14 lg:pt-20"
+    >
       <div className="container-shell">
+        <Reveal className="mb-10 rounded-[1.75rem] border border-forest/10 bg-cream/75 p-5 shadow-card sm:p-6 lg:flex lg:items-center lg:justify-between lg:gap-8">
+          <div className="max-w-2xl">
+            <p className="eyebrow text-clay">Condição com o corretor</p>
+            <h2 className="display-title mt-3 text-3xl leading-[1.08] text-forest sm:text-4xl">
+              Feche com o corretor Adriano e ganhe uma{' '}
+              <span className="whitespace-nowrap">TV 43&quot;.</span>
+            </h2>
+          </div>
+          <WhatsAppButton className="mt-5 w-full sm:w-auto lg:mt-0">
+            Chamar Adriano no WhatsApp
+          </WhatsAppButton>
+        </Reveal>
+
         <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <Reveal className="relative mx-auto w-full max-w-sm">
             <div
@@ -74,4 +91,3 @@ export function BookSection() {
     </section>
   );
 }
-

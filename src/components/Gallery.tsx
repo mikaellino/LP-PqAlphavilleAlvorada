@@ -1,11 +1,22 @@
 import { galleryItems } from '../data/gallery';
 import { Reveal } from './Reveal';
 import { SectionTitle } from './SectionTitle';
+import { WhatsAppButton } from './WhatsAppButton';
 
 export function Gallery() {
   return (
-    <section id="galeria" className="section-space bg-forest text-white">
+    <section
+      id="galeria"
+      className="bg-forest pb-[clamp(5rem,10vw,8.5rem)] pt-12 text-white sm:pt-16 lg:pt-20"
+    >
       <div className="container-shell">
+        <Reveal className="mb-9" delay={0.04}>
+          <WhatsAppButton className="w-full max-w-3xl sm:w-auto">
+            Lotes a partir de R$ 252 mil. Fale com o corretor e ganhe uma TV
+            43&quot; 4K.
+          </WhatsAppButton>
+        </Reveal>
+
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <SectionTitle
             eyebrow="Urbanismo e estilo de vida"
@@ -59,4 +70,3 @@ export function Gallery() {
     </section>
   );
 }
-

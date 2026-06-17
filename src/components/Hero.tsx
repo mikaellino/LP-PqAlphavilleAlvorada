@@ -47,8 +47,8 @@ export function Hero() {
             </span>
           </div>
 
-          <h1 className="display-title max-w-4xl text-balance text-5xl leading-[0.98] sm:text-6xl md:text-7xl lg:text-[5.75rem]">
-            Uma nova forma de viver está chegando
+          <h1 className="display-title max-w-3xl text-balance text-[2.9rem] leading-[1.02] sm:text-6xl md:text-7xl lg:text-[5.75rem]">
+            More na melhor localização com preço de lançamento!
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-7 text-white/78 sm:text-lg sm:leading-8">
             Parque Alphaville Alvorada é um novo bairro planejado com
@@ -57,8 +57,8 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <WhatsAppButton>
-              Falar com o corretor no WhatsApp
+            <WhatsAppButton className="w-full sm:w-auto">
+              Fale com o corretor para mais informações, valores e prazo de entrega
             </WhatsAppButton>
             <a
               href="#implantacao"

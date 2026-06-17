@@ -13,6 +13,7 @@ import {
 } from '../config/site';
 import { Reveal } from './Reveal';
 import { SectionTitle } from './SectionTitle';
+import { WhatsAppButton } from './WhatsAppButton';
 
 type ControlButtonProps = {
   label: string;
@@ -36,8 +37,17 @@ function ControlButton({ label, onClick, children }: ControlButtonProps) {
 
 export function ImplantationViewer() {
   return (
-    <section id="implantacao" className="section-space bg-cream">
+    <section
+      id="implantacao"
+      className="bg-cream pb-[clamp(5rem,10vw,8.5rem)] pt-10 sm:pt-14 lg:pt-20"
+    >
       <div className="container-shell">
+        <Reveal className="mb-8" delay={0.04}>
+          <WhatsAppButton className="w-full max-w-xl sm:w-auto">
+            Cadastre-se para participar do lançamento.
+          </WhatsAppButton>
+        </Reveal>
+
         <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
           <SectionTitle
             eyebrow="Implantação do projeto"

@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { Reveal } from './Reveal';
 import { SectionTitle } from './SectionTitle';
+import { WhatsAppButton } from './WhatsAppButton';
 
 type Feature = {
   icon: LucideIcon;
@@ -76,7 +77,13 @@ export function Features() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <Reveal className="mt-9" delay={0.16}>
+          <WhatsAppButton className="w-full max-w-2xl sm:w-auto">
+            Cadastre-se para o lançamento, garanta a escolha e o menor preço.
+          </WhatsAppButton>
+        </Reveal>
+
+        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => {
             const Icon = feature.icon;
 
@@ -112,4 +119,3 @@ export function Features() {
     </section>
   );
 }
-

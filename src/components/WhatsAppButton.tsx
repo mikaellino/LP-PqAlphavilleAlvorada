@@ -1,9 +1,10 @@
 import { ArrowUpRight } from 'lucide-react';
+import type { ReactNode } from 'react';
 import { FaWhatsapp } from 'react-icons/fa6';
 import { getWhatsAppUrl } from '../lib/whatsapp';
 
 type WhatsAppButtonProps = {
-  children: string;
+  children: ReactNode;
   variant?: 'primary' | 'light' | 'outline';
   compact?: boolean;
   className?: string;
@@ -28,14 +29,15 @@ export function WhatsAppButton({
       href={getWhatsAppUrl()}
       target="_blank"
       rel="noreferrer"
-      className={`inline-flex items-center justify-center gap-2 rounded-full font-semibold transition duration-300 ${variantClasses[variant]} ${
+      className={`inline-flex max-w-full items-center justify-center gap-2 rounded-full text-center font-semibold leading-snug transition duration-300 ${variantClasses[variant]} ${
         compact ? 'px-4 py-2.5 text-sm' : 'px-6 py-3.5 text-sm sm:text-base'
       } ${className}`}
     >
-      <FaWhatsapp aria-hidden="true" className="text-lg" />
-      <span>{children}</span>
-      {!compact && <ArrowUpRight aria-hidden="true" className="size-4" />}
+      <FaWhatsapp aria-hidden="true" className="shrink-0 text-lg" />
+      <span className="min-w-0 text-balance">{children}</span>
+      {!compact && (
+        <ArrowUpRight aria-hidden="true" className="size-4 shrink-0" />
+      )}
     </a>
   );
 }
-

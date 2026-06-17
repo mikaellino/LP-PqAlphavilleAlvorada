@@ -1,6 +1,7 @@
 import { ArrowDownRight } from 'lucide-react';
 import { Reveal } from './Reveal';
 import { SectionTitle } from './SectionTitle';
+import { WhatsAppButton } from './WhatsAppButton';
 
 export function About() {
   return (
@@ -37,6 +38,12 @@ export function About() {
         </Reveal>
 
         <div className="pt-8 lg:pt-0">
+          <Reveal className="-mt-2 mb-8 lg:mt-0" delay={0.05}>
+            <WhatsAppButton className="w-full max-w-xl sm:w-auto">
+              Lotes a partir de R$ 252 mil. Fechando comigo, ganhe uma TV 43&quot; 4K.
+            </WhatsAppButton>
+          </Reveal>
+
           <SectionTitle
             eyebrow="Sobre o lançamento"
             title="Um parque que vai transformar a forma de viver a cidade"
@@ -70,4 +77,3 @@ export function About() {
     </section>
   );
 }
-
