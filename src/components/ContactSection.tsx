@@ -1,6 +1,5 @@
-import { Clock3, MapPin, MessageCircleMore, ShieldCheck } from 'lucide-react';
+import { Clock3, MessageCircleMore, ShieldCheck } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa6';
-import { STAND_ADDRESS } from '../config/site';
 import { WHATSAPP_PHONE_DISPLAY, getWhatsAppUrl } from '../lib/whatsapp';
 import { GoogleFormEmbed } from './GoogleFormEmbed';
 import { Reveal } from './Reveal';
@@ -53,19 +52,7 @@ export function ContactSection() {
                 </p>
               </div>
 
-              <div className="grid gap-4 border-t border-white/10 bg-black/10 p-7 text-sm text-white/68 sm:p-9">
-                <p className="flex items-start gap-3">
-                  <MapPin
-                    aria-hidden="true"
-                    className="mt-0.5 size-4 shrink-0 text-clay-light"
-                  />
-                  <span>
-                    <strong className="block font-semibold text-white">
-                      Stand de atendimento
-                    </strong>
-                    {STAND_ADDRESS}
-                  </span>
-                </p>
+              <div className="border-t border-white/10 bg-black/10 p-7 text-sm text-white/68 sm:p-9">
                 <p className="flex items-start gap-3">
                   <Clock3
                     aria-hidden="true"
@@ -119,4 +106,3 @@ export function ContactSection() {
     </section>
   );
 }
-

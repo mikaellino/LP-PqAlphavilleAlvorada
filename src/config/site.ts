@@ -1,6 +1,5 @@
 export const SITE_NAME = 'Parque Alphaville Alvorada';
 export const SITE_REGION = 'Região de Sorocaba/Votorantim';
-export const STAND_ADDRESS = 'Av. Rogério Cassola, 581 - Votorantim - SP';
 
 export const BOOK_PDF_URL =
   '/docs/lancamento-parque-alphaville-alvorada.pdf';
@@ -16,4 +15,3 @@ export const NAV_ITEMS = [
   { label: 'Fale conosco', href: '#contato' },
   { label: 'Privacidade', href: '#privacidade' },
 ] as const;
-

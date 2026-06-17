@@ -1,4 +1,4 @@
-import { BOOK_PDF_URL, IMPLANTATION_PDF_URL, STAND_ADDRESS } from '../config/site';
+import { BOOK_PDF_URL, IMPLANTATION_PDF_URL } from '../config/site';
 import { WHATSAPP_PHONE_DISPLAY } from '../lib/whatsapp';
 
 export function Footer() {
@@ -56,9 +56,6 @@ export function Footer() {
             <p className="mt-4 text-sm text-white/58">
               {WHATSAPP_PHONE_DISPLAY}
             </p>
-            <p className="mt-2 text-sm leading-6 text-white/58">
-              {STAND_ADDRESS}
-            </p>
           </div>
         </div>
 
@@ -97,4 +94,3 @@ export function Footer() {
     </footer>
   );
 }
-
