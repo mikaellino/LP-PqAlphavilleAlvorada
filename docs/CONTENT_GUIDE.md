@@ -13,7 +13,7 @@
 - Mais de 2.500 m de ciclovia.
 - Mais de dez áreas de lazer e lazer completo.
 - Praças de convivência, conveniência, mobilidade, lazer e segurança.
-- Telefone do corretor: `(19) 98105-9004`.
+- Telefone do corretor: `(19) 97605-2243`.
 - Endereço do stand informado no book:
   `Av. Rogério Cassola, 581 - Votorantim - SP`.
 

@@ -20,8 +20,8 @@
 ## Conversão e integrações
 
 - [x] Todos os CTAs usam o helper central de WhatsApp.
-- [x] Telefone visual é `(19) 98105-9004`.
-- [x] Link usa `5519981059004` e a mensagem definida no projeto.
+- [x] Telefone visual é `(19) 97605-2243`.
+- [x] Link usa `5519976052243` e a mensagem definida no projeto.
 - [x] Google Forms é exibido por iframe com URL de ambiente.
 - [x] Fallback do Google Forms funciona.
 - [x] Book abre em nova aba e pode ser baixado.

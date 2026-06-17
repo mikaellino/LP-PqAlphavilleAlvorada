@@ -38,7 +38,7 @@ npm run lint
 - Não acrescentar informações legais que não constem nos materiais fornecidos.
 - Usar os PDFs do empreendimento como fonte principal de conteúdo e identidade.
 - Centralizar todos os links de WhatsApp no helper de `src/lib/whatsapp.ts`.
-- Manter o telefone `(19) 98105-9004`, o link `5519981059004` e a mensagem
+- Manter o telefone `(19) 97605-2243`, o link `5519976052243` e a mensagem
   definidos no contexto do projeto.
 - Usar Google Forms incorporado por iframe; não usar Formspree, envio manual ao
   Google Forms ou backend próprio nesta versão.

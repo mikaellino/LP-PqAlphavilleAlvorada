@@ -1,5 +1,5 @@
-export const WHATSAPP_PHONE_DISPLAY = '(19) 98105-9004';
-export const WHATSAPP_PHONE_LINK = '5519981059004';
+export const WHATSAPP_PHONE_DISPLAY = '(19) 97605-2243';
+export const WHATSAPP_PHONE_LINK = '5519976052243';
 
 export const WHATSAPP_MESSAGE =
   'Olá! Gostaria de conversar sobre o Lançamento parque Alphaville Sorocaba!';
